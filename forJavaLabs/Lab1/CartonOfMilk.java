@@ -6,6 +6,7 @@ public class CartonOfMilk {
 	    private String color;
 	    private double capacity;
 	    private int number;
+	    public static int generalNumber = 0;
 
     public CartonOfMilk () {
 	
