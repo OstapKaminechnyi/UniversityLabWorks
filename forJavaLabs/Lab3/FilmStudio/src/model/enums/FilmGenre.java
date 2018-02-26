@@ -1,6 +1,6 @@
 package model.enums;
 
 public enum FilmGenre {
-ActionFilms, AdventureFilms, DocumentaryFilms, ComedyFilms, ThrillerFilms;
+ACTIONFILMS, ADVENTUREFILMS, DOCUMENTARYFILMS, COMEDYFILMS,THRILLERFILMS;
 	
 }

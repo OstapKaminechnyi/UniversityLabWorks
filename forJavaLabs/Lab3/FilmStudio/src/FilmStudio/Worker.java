@@ -94,7 +94,7 @@ public void setYearExperience(int yearExperience) {
 }
 @Override
 public String toString() {
-	return "Worker [occupation ="+ occupationName  + ", first Name =" + firstName + ", last Name =" + lastName + ",age ="
-			+ age + ", salary per hour =" + salaryPerHour + ",film genre can play =" + genre + ", yearExperience =" + yearExperience + "]"+"\n";
+	return "Worker [occupation = "+ occupationName  + ", first Name = " + firstName + ", last Name = " + lastName + ",age = "
+			+ age + ", salary per hour = " + salaryPerHour + ",film genre can play = " + genre + ", year Experience = " + yearExperience + "]"+"\n";
 }
 }

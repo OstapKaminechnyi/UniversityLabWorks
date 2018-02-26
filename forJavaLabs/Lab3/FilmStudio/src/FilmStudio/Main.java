@@ -11,10 +11,10 @@ public class Main {
 	public static void main (String[] args) {
 		
 		
-		Actor actor = new Actor ("Neil", "Armstrong","Actor","Ryan" ,"Gosling", 37, 9500,FilmGenre.ComedyFilms,20);
-		Cameraman cameraman = new Cameraman (25,"Cameraman","Robert" ,"Elswit", 57, 12000,FilmGenre.DocumentaryFilms,39);
-		Producer producer = new Producer (25000000.50,"Producer","Lauren" ,"Greenfield", 63, 20500,FilmGenre.DocumentaryFilms,40);
-		Director director = new Director ("First Man","Director","Michael" ,"Bay", 53, 50000,FilmGenre.AdventureFilms,27);
+		Actor actor = new Actor ("Neil", "Armstrong","Actor","Ryan" ,"Gosling", 37, 9500,FilmGenre.COMEDYFILMS,20);
+		Cameraman cameraman = new Cameraman (25,"Cameraman","Robert" ,"Elswit", 57, 12000,FilmGenre.DOCUMENTARYFILMS,39);
+		Producer producer = new Producer (25000000.50,"Producer","Lauren" ,"Greenfield", 63, 20500,FilmGenre.DOCUMENTARYFILMS,40);
+		Director director = new Director ("First Man","Director","Michael" ,"Bay", 53, 50000,FilmGenre.ADVENTUREFILMS,27);
 		
 		StudioManager manager = new StudioManager();
 		manager.addWorker (actor);
