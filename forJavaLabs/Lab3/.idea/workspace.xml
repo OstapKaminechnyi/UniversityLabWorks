@@ -39,10 +39,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="StudioManagerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StudioManagerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/test/java/com/manager/StudioManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="574">
               <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -51,24 +51,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/menu.csv">
+      <file leaf-file-name="WorkerWriter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/WorkerWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="189">
+              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WorkerWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/WorkerWriter.java">
+      <file leaf-file-name="staff.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/work/staff.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,7 +93,7 @@
       <file leaf-file-name="Director.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Director.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="420">
               <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
               <folding>
                 <element signature="e#582#583#0" expanded="true" />
@@ -110,8 +110,8 @@
       <file leaf-file-name="Actor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="420">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#906#907#0" expanded="true" />
                 <element signature="e#990#991#0" expanded="true" />
@@ -127,16 +127,14 @@
       <file leaf-file-name="StudioManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/main/java/com/manager/StudioManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="378">
+              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#193#201#0" expanded="true" />
                 <element signature="e#479#480#0" expanded="true" />
                 <element signature="e#526#527#0" expanded="true" />
                 <element signature="e#577#578#0" expanded="true" />
                 <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#747#755#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,7 +143,7 @@
       <file leaf-file-name="Producer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Producer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
+            <state relative-caret-position="336">
               <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="e#531#532#0" expanded="true" />
@@ -162,8 +160,8 @@
       <file leaf-file-name="Worker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Worker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#1476#1477#0" expanded="true" />
                 <element signature="e#1508#1509#0" expanded="true" />
@@ -269,7 +267,9 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -376,8 +376,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -645,9 +643,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudioManagerTest - 2018.03.07 at 09h 56m 08s.xml">
-      <configuration name="StudioManagerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StudioManagerTest - 2018.03.07 at 09h 56m 15s.xml">
       <configuration name="StudioManagerTest" configurationId="JUnit" />
     </history-entry>
@@ -658,6 +653,9 @@
       <configuration name="StudioManagerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StudioManagerTest - 2018.03.15 at 11h 47m 18s.xml">
+      <configuration name="StudioManagerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StudioManagerTest - 2018.03.18 at 13h 34m 01s.xml">
       <configuration name="StudioManagerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="com_in_work - 2018.03.07 at 12h 34m 11s.xml">
@@ -721,22 +719,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/work/src/main/java/com/manager/StudioManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#193#201#0" expanded="true" />
-            <element signature="e#479#480#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#747#755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/Comparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3129">
@@ -760,12 +742,10 @@
           <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#193#201#0" expanded="true" />
             <element signature="e#479#480#0" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#747#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,12 +772,10 @@
           <caret line="43" column="32" lean-forward="false" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#193#201#0" expanded="true" />
             <element signature="e#479#480#0" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#747#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,8 +851,8 @@
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Main.java" />
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="420">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#906#907#0" expanded="true" />
             <element signature="e#990#991#0" expanded="true" />
@@ -888,7 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Director.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="420">
           <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
           <folding>
             <element signature="e#582#583#0" expanded="true" />
@@ -903,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="336">
           <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="e#531#532#0" expanded="true" />
@@ -918,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#1476#1477#0" expanded="true" />
             <element signature="e#1508#1509#0" expanded="true" />
@@ -931,16 +909,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/manager/StudioManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="378">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#193#201#0" expanded="true" />
             <element signature="e#479#480#0" expanded="true" />
             <element signature="e#526#527#0" expanded="true" />
             <element signature="e#577#578#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#747#755#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -960,31 +936,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/menu.csv">
+    <entry file="file://$PROJECT_DIR$/work/src/test/java/com/manager/StudioManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="574">
+          <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work/src/main/java/com/filmstudio/WorkerWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="47" lean-forward="false" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="189">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/work/src/test/java/com/manager/StudioManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/work/menu.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/staff.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

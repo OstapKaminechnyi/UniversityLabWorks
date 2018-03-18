@@ -1,12 +1,8 @@
 occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,characterFirstName,characterLastName 
 Ryan, Gosling, 37, COMEDYFILMS, 9500, 20, Neil, Armstrong
-
 occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,camerasAmount
 Robert, Elswit, 57, DOCUMENTARYFILMS, 12000, 39, 25
-
 occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,moneyAmount
 Lauren, Greenfield, 63, DOCUMENTARYFILMS, 20500, 40, 2.50000005E7
-
 occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience, scenario
 Michael, Bay, 53, ADVENTUREFILMS, 50000, 27, First Man
-

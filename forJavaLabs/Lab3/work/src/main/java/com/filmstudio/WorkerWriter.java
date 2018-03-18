@@ -7,7 +7,7 @@ import java.util.List;
 public class WorkerWriter {
 
     public final void writeToFile(final List<Worker> workers) {
-        try (PrintWriter writer = new PrintWriter("menu10.csv")) {
+        try (PrintWriter writer = new PrintWriter("staff.csv")) {
             for (Worker worker : workers) {
                 writer.println(worker.getHeaders());
                 writer.println(worker.toCSV());
