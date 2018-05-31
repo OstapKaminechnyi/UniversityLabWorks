@@ -1,0 +1,8 @@
+occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,characterFirstName,characterLastName 
+null, null, 0, null, 0, 0, null, null
+occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,camerasAmount
+null, null, 0, null, 0, 0, 0
+occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience,moneyAmount
+null, null, 0, null, 0, 0, 0.0
+occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience, scenario
+null, null, 0, null, 0, 0, null

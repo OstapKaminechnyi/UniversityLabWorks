@@ -1,0 +1,14 @@
+com\filmstudio\Actor.class
+com\persistance\dao\WorkerDao.class
+com\manager\StudioManager.class
+com\filmstudio\Cameraman.class
+com\rest\config\JaxRsConfig.class
+com\persistance\dao\WorkerDaoImpl.class
+com\rest\service\WorkerService.class
+com\filmstudio\Worker.class
+com\enums\FilmGenre.class
+com\filmstudio\Director.class
+com\persistance\dao\AbstractDao.class
+com\persistance\dao\IDao.class
+com\filmstudio\Producer.class
+com\filmstudio\WorkerWriter.class

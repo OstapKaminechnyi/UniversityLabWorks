@@ -1,56 +1,100 @@
 package com.filmstudio;
 
-import model.enums.FilmGenre;
+import com.enums.FilmGenre;
 
+import javax.persistence.*;
 
-public abstract class Worker {
-    private String occupationName;
-    private String firstName;
-    private String lastName;
+@Entity
+
+public class Worker {
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @Column (name= "id")
+    private Integer id;
+
+    @Column(name = "occupation_name")
+
+    private String occupationName ;
+    @Column(name = "first_name")
+
+    private String firstName ;
+    @Column(name = "last_name")
+
+    private String lastName ;
+    @Column(name = "age")
     private int age;
-    private int salaryPerHour;
-    private FilmGenre genre;
-    private int yearExperience;
 
-    public final String getOccupationName() {
+    @Column(name = "salary_per_hour")
+    private int salaryPerHour ;
+
+    @Column(name = "genre")
+    private FilmGenre genre;
+
+    @Column(name = "year_experience")
+    private int yearExperience ;
+    public Worker( final Integer id, final String occupationName, final  String firstName,
+                final    String lastName, final int age, final int salaryPerHour,
+                final    FilmGenre genre, final int yearExperience) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.salaryPerHour = salaryPerHour;
+        this.genre = genre;
+        this.yearExperience = yearExperience;
+        this.occupationName = occupationName;
+        this.id = id;
+    } public Worker() {
+    }
+    public String getHeaders() {
+        return "occupationName, firstName, lastName, age, salaryPerHour, genre, yearExperience";
+    }
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public  String getOccupationName() {
         return occupationName;
     }
 
 
-    public final void setOccupationName(final String pOccupationName) {
-        this.occupationName = pOccupationName;
+    public  void setOccupationName( String occupationName) {
+
+        this.occupationName = occupationName;
     }
 
 
-    public final FilmGenre getGenre() {
+    public  FilmGenre getGenre() {
         return genre;
     }
 
 
-    public Worker() {
+
+
+    public Worker(int id) {
+        this.id= id;
     }
 
 
-    public Worker(final String pOccupationName, final String pFirstName,
-                  final String pLastName, final int pAge, final int pSalaryPerHour,
-                  final FilmGenre pGenre, final int pYearExperience) {
-        this.firstName = pFirstName;
-        this.lastName = pLastName;
-        this.age = pAge;
-        this.salaryPerHour = pSalaryPerHour;
-        this.genre = pGenre;
-        this.yearExperience = pYearExperience;
-        this.occupationName = pOccupationName;
-    }
 
+
+
+    public String toCSV() {
+        return getFirstName() + ", " + getLastName() + ", " + getAge() + ", " + getGenre() + ", " + getSalaryPerHour()
+                + ", " + getYearExperience();
+    }
 
     public final String getFirstName() {
         return firstName;
     }
 
 
-    public final void setFirstName(final String pFirstName) {
-        this.firstName = pFirstName;
+    public  void setFirstName( String firstName) {
+        this.firstName = firstName;
     }
 
 
@@ -59,8 +103,8 @@ public abstract class Worker {
     }
 
 
-    public final void setLastName(final String pLastName) {
-        this.lastName = pLastName;
+    public  void setLastName( String lastName) {
+        this.lastName = lastName;
     }
 
 
@@ -69,36 +113,41 @@ public abstract class Worker {
     }
 
 
-    public final void setAge(final int pAge) {
-        this.age = pAge;
+    public  void setAge( int age) {
+
+        this.age = age;
     }
 
 
-    public final int getSalaryPerHour() {
+    public  int getSalaryPerHour() {
+
         return salaryPerHour;
     }
 
 
-    public final void setSalaryPerHour(final int pSalaryPerHour) {
-        this.salaryPerHour = pSalaryPerHour;
+    public  void setSalaryPerHour( int salaryPerHour) {
+
+        this.salaryPerHour = salaryPerHour;
     }
 
 
-    public final int getYearExperience() {
+    private int getYearExperience() {
         return yearExperience;
     }
 
 
-    public final void setYearExperience(final int pYearExperience) {
-        this.yearExperience = pYearExperience;
+    public  void setYearExperience( int yearExperience) {
+
+
+        this.yearExperience = yearExperience;
     }
 
     @Override
-    public final String toString() {
+    public  String toString() {
         return "Worker [occupation = " + occupationName + ", first Name = "
                 + firstName + ", last Name = " + lastName + ",age = "
                 + age + ", salary per hour = " + salaryPerHour
-               + ",film genre can play = " + genre + ", year Experience = "
-              +  yearExperience + "]" + "\n";
+                + ",film genre can play = " + genre + ", year Experience = "
+                + yearExperience + "]" + "\n";
     }
 }
