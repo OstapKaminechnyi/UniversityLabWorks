@@ -1,9 +1,9 @@
 from StudioManager import StudioManager
-from Actor import Actor
-from Cameraman import Cameraman
-from Producer import Producer
+from Studio.Actor import Actor
+from Studio.Cameraman import Cameraman
+from Studio.Producer import Producer
 from enums.FilmGenre import FilmGenre
-from Director import Director
+from Studio.Director import Director
 
 if __name__ == "__main__":
     studio_manager = StudioManager()
