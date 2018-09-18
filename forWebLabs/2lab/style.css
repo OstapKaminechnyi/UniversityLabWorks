@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+      max-width: 1000px;
+    margin: 20px auto;
+ font-family: Source Sans Pro;
+}
+.info{
+  border-left: 5px solid #bdc3c7; 
+  padding-left: 5px;  
+    font-size: 17px;
+
+}
+.president {
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin : 20px auto;
+}
+.match{
+  margin-bottom:20px;
+}
+
+header {
+  margin-bottom: 130px;
+  margin-top: 90px;
+  margin-left: 40px;
+  line-height: 1em;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 2.0rem ;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.header{
+  text-align: left;
+  font-size: 30pt;
+}
+
+
+footer {
+  font-size: 13pt;
+  text-align: center;
+}
+
+
+
+.main-menu {
+  list-style: none;
+  padding: 10px 0 80px;
+  text-align: center;
+  background: white;
+}
+.main-menu li {display: inline-block;}
+.main-menu a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 36px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.main-menu a, .main-menu a:visited {color: #a0adb6;}
+.main-menu a.current, .main-menu a:hover{color: #43e018;}
+.main-menu a:before,
+.main-menu a:after {
+  content: "";
+  position: absolute;
+  background: #43e018;
+  transition: .5s;
+}
+
+
+.main-menu {
+   position:relative;
+   display:inline-block;
+}
+ul.submenu {
+  background-color: white;
+   position:absolute;
+   display:none;
+
+}
+ul.submenu > li {
+  display: block;
+  margin-bottom: 10px;
+}
+.main-menu > ul > li:hover > ul.submenu {
+   display:block;
+
+}
+.main-menu > ul > li:after {
+   display: inline-block;
+   position: absolute;
+   }
