@@ -1,0 +1,7 @@
+Nikon, 5600, 11
+Sony, 28000, 43
+Panasonic, 128000, 28
+Olympus, 64000, 46
+GoPro, 12000, 30
+Canon, 55000, 69
+Fuji, 245000, 28
