@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Chakra Petch');
 
-body {
-  margin-left: 18%;
-  margin-right: 18%;
-  margin-top: 2%;
+body { background-color: white
+ }
+
+  @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .body, .content, .text {
+    width:100%;
   }
+}
 .newsbox {
   display: flex;
   justify-content: center;
@@ -13,6 +17,7 @@ body {
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
+
 .conteiner {
   width: 25%;
   border-left: solid 1px;
@@ -22,6 +27,7 @@ body {
 .headline {
   align-items: flex-start;
 }
+
 .img {
   width: 250px;
   height: 200px;
@@ -29,11 +35,6 @@ body {
 }
 .logo{
   float: right;
-}
-.main-menu{
-
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .text{
@@ -53,98 +54,8 @@ content, footer{
   font-family: 'Chakra Petch', sans-serif;
 }
 
-ul.submenu {
-    display: none;
-    background-color: white;
-    position: absolute;
-    margin: 0px 20px 20px 20px;
-    padding: 0px 10px 50px 0px;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-}
-
-ul.main-menu > li:hover > ul.submenu {
-    display: block;
-    text-shadow: 2px 2px 8px #FF0000;
-}
-
-.main-menu {
-  list-style: none;
-  margin: 40px 0 5px;
-  padding: 25px 0 5px;
-  text-align: center;
-  background: white;
-}
-
-.main-menu li:hover {
-  transition: 0.2s;
-    text-shadow: 0px 0px 5px #000000;
-}
-
-.submenu li:hover {
-  animation: sub 0.5s;
-  animation-fill-mode: forwards;
-  transition: 0.2s;
-  text-shadow: 0px 0px 5px #000000;
-}
-
-.main-menu li {
-  display: inline-block;
-}
-
-.main-menu li:after {
-  color: #000000;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.main-menu{
-  animation-duration: 3s;
-  animation-name: slidein;
-}
 .img{
   animation-duration: 3s;
   animation-name: maximize;
-}
-
-@keyframes maximize {
-  from {width: 0%
-  }
-  to {width: 100%}
-}
-
-@keyframes slidein {
-   from {margin-left: -100%;
-    width: 300%;}
-    to {margin-left: 0%;
-    width: 100%;}
-  }
-@keyframes sub {
-  100% { transform: scaleX(1.10); }
-}
-
-
-.main-menu a {
-  text-decoration: none;
-  font-family: 'Chakra Petch', sans-serif;
-  padding-bottom: 20px;
-  margin: 0 34px 0 30px;
-  font-size: 20px;
-  text-transform: uppercase;
-  display: inline-block;
-  transition: color .3s;
-}
-
-.main-menu a, 
-.main-menu a:visited {color: #000000;}
-.main-menu a.current,
-.main-menu a:hover{color: #4DFF70;}
-.main-menu a:before,
-.main-menu a:after
-
-@media (max-width: 550px) {
-.main-menu {
-  padding-top: 0;
 }
 

@@ -5,34 +5,57 @@
 
   <title>News | Seria A </title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+<link href="D:\Sublime Text 3\folderForHTMLfiles\2lab\bootstrap.css" rel="stylesheet">
+
+  <link href="D:\Sublime Text 3\folderForHTMLfiles\2lab\style.css" rel="stylesheet">
 
   <body>
-    <div class = "logo">
-      <img  src="logo.png" align="middle" width=64 height="64">
-    </div>
-    <header>
-      <nav>
-        <ul class= "main-menu">
-          <li><a href="index.html">Main</a></li>
-          <li><a href="">Matches</a>
-            <ul class="submenu">
-              <li><a href="">Calendar of matches</a></li>
-              <li><a href="">Next game</a></li>
-              <li><a href="">Raitings</a></li>
-            </ul>
-          </li>
-          <li><a href="news.html" class="current">News</a>
+    <div class="content">
 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class = "logo">
+        <img  src="D:\Sublime Text 3\folderForHTMLfiles\2lab\logo.png" align="middle" width=64 height="64">
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Main</a>
           </li>
-          <li><a href="">Fans</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><a href="">Admin</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Matches 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Calendar of matches</a>
+              <a class="dropdown-item" href="#">Next Game</a>
+              <a class="dropdown-item" href="#">Raitings</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fans</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admin</a>
+          </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <content>
+
+
+     <content>
       <h1>News
       </h1>
       <div class='newsbox'>
