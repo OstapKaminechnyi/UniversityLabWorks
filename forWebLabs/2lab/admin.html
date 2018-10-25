@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="uk" manifest="manifest.appcache">
+
 <head>
+  <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>News | Seria A </title>
+  <title>Admin | Seria A </title>
   <link href="bootstrap.css" rel="stylesheet">
 
   <link href="style.css" rel="stylesheet">
@@ -43,60 +46,64 @@
           </li>
 
           <li class="nav-item">
-            <li class="nav-item active">
             <a class="nav-link" href="news.html">News</a>
           </li>
-        </li>
           <li class="nav-item">
 
             <a class="nav-link" href="fans.html">Fans</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacts.html">Contacts</a>
-          </li>
-          <li class="nav-item">
+
+          <a class="nav-link" href="contacts.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <li class="nav-item active">
+
             <a class="nav-link" href="admin.html">Admin</a>
           </li>
-        </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <content>
+    <div class="card">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-xs-12">
+          <h3>Add image</h3>
+          <div class="custom-file mb-3">
+            <input type="file" class="custom-file-input" id="customFile" name="filename">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+        </div>
       </div>
-    </nav>
-<content>
-
- <h1>News
-      </h1>
-      <content>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-5 col-md-4 col-lg-3 card">
-      <img class="cardImg" src="25e8e2.jpeg">
-        <h3 class="cardText">The matches of the seventh round of the championship of Italy</h3>
-      <p class="cardText">Serie A: After beating Atalanta, Fiorentina entered the zone of Champions League, and Chievo is still in the red.</p>
-    </div>
-    <div class="col-sm-5 col-md-4 col-lg-3 card">
-      <img class="cardImg"  src="373022.jpg">
-      <h3 class="cardText">Frosinone has established an anti-record of Serie A</h3>
-      <p class="cardText">Frosinone was able to score the first goal in the current Italian championship only in the seventh round.</p>
-    </div>
-    <div class="col-sm-5 col-md-4 col-lg-3 card">
-      <img class="cardImg" src="373013.png">
-      <h3 class="cardText">Bologna in the seventh round won her second victory</h3>
-      <p class="cardText">After a strong-willed victory over Udinese, Bologna got out of the relegation zone.</p>
+      <div class="col-lg-6 col-sm-12 col-xs-12">
+        <h3>Add title</h3>
+        <form role="form">
+          <div class="form-group">
+            <input type="text" placeholder="Title" class="form-control">
+          </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-xs-12">
+          <h3>Add text</h3>
+          <div class="form-group">
+            <textarea class="form-control" rows="3" placeholder="Short description"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="10" placeholder="Long description"></textarea>
+          </div>
+          <button type="submit" class="btn btn-success rg">Add news</button>
+        </form>
+      </div>
     </div>
 
-  </div>
-  </div>
-</div>
-</content>
+  </content>
+  <footer>
+    <hr>
+    &#169; 2018. Ostap Kaminechnyi
+  </footer>
 
-
-
-    <footer>
-      <hr>
-      &#169; 2018. Ostap Kaminechnyi
-    </footer>
- <script src="jquery.min.js"></script>
+  <script src="jquery.min.js"></script>
   <script src="popper.min.js"></script>
   <script src="bootstrap.min.js"></script>
-  </div>
+</div>
 </body>
 </html>

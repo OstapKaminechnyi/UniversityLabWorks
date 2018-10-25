@@ -1,44 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Chakra Petch');
-
 body { background-color: white
  }
 
   @media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .body, .content, .text {
+  /* for mobile phones */
+  .content, .text, .body {
+
     width:100%;
   }
 }
-.newsbox {
-  display: flex;
-  justify-content: center;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+/*Admin page*/
+.custom-file-name:after {
+  content: attr(data-content) !important;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+}
+}
+.response {
+  display: inline-block;
 }
 
-.conteiner {
-  width: 25%;
-  border-left: solid 1px;
-  border-right: solid 1px;
-}
-  
-.headline {
-  align-items: flex-start;
+.card {
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.img {
-  width: 250px;
-  height: 200px;
-  display: flex;
-}
+
 .logo{
   float: right;
 }
 
 .text{
-  font-family: 'Chakra Petch', sans-serif;
+  font-family:  sans-serif;
 }
 
 footer{
@@ -51,11 +49,45 @@ h1{
 }
 
 content, footer{
-  font-family: 'Chakra Petch', sans-serif;
+  font-family:  sans-serif;
+}
+/*Error*/
+.error{
+  text-align: center;
+  margin: 5px;
+}
+ .error-header{
+  font-size: 100pt;
+  text-shadow: 2px 2px rgb(169,169,169);
 }
 
-.img{
-  animation-duration: 3s;
-  animation-name: maximize;
+
+
+/*News*/
+.cardText {
+  text-align: center;
 }
 
+.cardImg{
+  margin-top: 7%;
+  width: 100%;
+}
+
+.card {
+  margin: 30px;
+}
+/*Contacts*/
+#left {
+    display: block;
+    float: left;
+    top: 0;
+}
+.text{
+      font-size: 120%;
+
+}
+#right {
+    display: block;
+    float: right;
+    top: 0;
+}

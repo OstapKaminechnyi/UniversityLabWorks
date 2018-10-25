@@ -1,0 +1,24 @@
+CACHE MANIFEST
+CACHE:
+index.html
+news.html
+calendar.html
+bootstrap.css
+style.css
+jquery.min.js
+popper.min.js
+bootstrap.min.js
+micciche-752798-600x415.jpg
+373010.jpg
+ben-hershey-603997-unsplash.jpg
+logo.png
+25e8e2.jpeg
+373022.jpg
+373013.png
+
+NETWORK:
+fans.html
+admin.html
+
+FALLBACK:
+contacts.html error.html
