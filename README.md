@@ -1,2 +1,2 @@
 # UniversityLabWorks
-Repository for university labs on [IOT](http://iot.lviv.ua/)
+Repository for university labs on [IoT](http://iot.lviv.ua/)
