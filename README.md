@@ -1,2 +1,2 @@
 # UniversityLabWorks
-My first experience in GitHub
+Repository for university labs on [NULP](http://lp.edu.ua/)
