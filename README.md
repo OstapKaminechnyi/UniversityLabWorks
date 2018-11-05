@@ -1,2 +1,2 @@
 # UniversityLabWorks
-Repository for university labs on [NULP](http://lp.edu.ua/)
+Repository for university labs on [IOT](http://iot.lviv.ua/)
