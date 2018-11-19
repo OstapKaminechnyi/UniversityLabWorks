@@ -6,7 +6,7 @@
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="descriptionoption" content="">
   <title>Admin | Seria A </title>
   <link href="bootstrap.css" rel="stylesheet">
 
@@ -64,38 +64,42 @@
       </ul>
     </div>
   </nav>
+
   <content>
+   <br>
+    <center>
+      <h1>Додати новину</h1>
+    </center>
+    <br>
     <div class="card">
+      <br>
       <div class="row">
-        <div class="col-lg-6 col-sm-12 col-xs-12">
-          <h3>Add image</h3>
-          <div class="custom-file mb-3">
-            <input type="file" class="custom-file-input" id="customFile" name="filename">
-            <label class="custom-file-label" for="customFile">Choose file</label>
+        <div class="col">
+          <div class="form-group">
+            <input id="my-file-selector" class="form-control" type="file" accept="image/*" class="btn btn-choose btn-success btn-outline btn-block"
+              id="userInputFile" type="file" aria-describedby="fileHelp" onchange="loadPreviewPhoto()">
+            <center>
+              <small id="fileHelp" class="form-text text-muted">Вибрати фото статті.</small>
+            </center>
           </div>
+          <center>
+            <img src="images/add_image.svg" alt="your photo" class="img-fluid" id="user-image" width='150px'>
+
+            <br>
         </div>
-      </div>
-      <div class="col-lg-6 col-sm-12 col-xs-12">
-        <h3>Add title</h3>
-        <form role="form">
+        <div class="col">
           <div class="form-group">
-            <input type="text" placeholder="Title" class="form-control">
+            <input class="form-control" type="text" id="header" placeholder="Заголовок...">
+            <br>
+            <textarea class="form-control" rows="3" id="shortText" placeholder="Короткий опис статті..."></textarea>
+            <br>
+            <textarea class="form-control" rows="6" id="newsText" placeholder="Стаття..."></textarea>
           </div>
+          <button class="btn btn-success" type="submit" onclick="addNews()">Відправити</button>
         </div>
-        <div class="col-lg-12 col-sm-12 col-xs-12">
-          <h3>Add text</h3>
-          <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Short description"></textarea>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="10" placeholder="Long description"></textarea>
-          </div>
-          <button type="submit" class="btn btn-success rg">Add news</button>
-        </form>
       </div>
     </div>
-
-  </content>
+  </div>
   <footer>
     <hr>
     &#169; 2018. Ostap Kaminechnyi
@@ -104,6 +108,13 @@
   <script src="jquery.min.js"></script>
   <script src="popper.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js "></script>
+  <script src="js/add_news.js "></script>
+
+  <script src="http://rawgit.com/notifyjs/notifyjs/master/dist/notify.js "></script>
+  <script src="js/notify.js "></script>
+
+
 </div>
 </body>
 </html>

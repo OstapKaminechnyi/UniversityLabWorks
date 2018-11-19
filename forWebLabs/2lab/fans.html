@@ -13,8 +13,6 @@
 
 
 <body>
-  <div class="content">
-
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class = "logo">
@@ -63,31 +61,32 @@
 
 
     <content>
-      <h1> Fans responses</h1>
-     <div class="content">
-      <br />
+  <br>
+    <div id="responses">
       <div class="card">
-        <h2 class="response">Jeorge Jeff </h2><time>19.09.2018</time>
-        <p>Everything is fine. Keep grinding! You may look to support one of the sides fighting to win the Serie A title this season, Juventus or Napoli. Or, perhaps go towards teams that have a good tradition in Italy, such as Milan, Inter or AS Roma. This season has been particularly interesting. Juventus, who has won the title for the last six editions, is being challenged by Napoli. Juve are now in first place, 2 points ahead of Napoli who has dominated much of the season so far. I wrote in greater detail about the title race here.</p>
+        <p>
+          <span class="h2 pull-left">Gregory Manmal</span>
+          <span>
+            <i>11.11.2017, 14:00</i>
+          </span>
+        </p>
+        <p>
+         Why I am still here? 
+        </p>
       </div>
-      <br /><br />
-      <div class="card">
-        <h2 class="response">Ghandi</h2><time>11.09.2018</time>
-        <p>Serie A is considered as a league that is hard to score past. The goal per match ratio is pretty low when compared to other leagues. Also if you are a fan of Italian national team, then you would know the rich history of defenders that the Italian team has produced. Although Juventus won the league consecutively, the competition is getting stiffer year by year and they are stepping up with new signings and game plan.</p>
-      </div>
-      <br/><br/>
-    </div>
-    <div class="content">
-      <form role="form">
+      <div class="card" id="newResponseField">
+        <h4 class="block-header">Response</h4>
+        </br>
         <div class="form-group">
-          <textarea class="form-control" rows="5" id="comment" placeholder="Write response"></textarea>
+          <textarea class="form-control" rows="1" id="name" placeholder="Name"></textarea>
+          <br>
+          <textarea class="form-control" rows="4" id="comment" placeholder="Text"></textarea>
+          <br />
+          <button class="btn btn-success btn-block" type="submit" onclick="addResponse()">Відправити</button>
         </div>
-        <button type="submit" class="btn btn-success rg">Send</button>
-      </form>
-      <br />
-    </content>
-
-    <footer>
+      </div>
+    </div>
+  <footer>
       <hr>
       &#169; 2018. Ostap Kaminechnyi
     </footer>
@@ -95,6 +94,11 @@
   <script src="jquery.min.js"></script>
   <script src="popper.min.js"></script>
   <script src="bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/notify.js "></script>
+  <script src="js/add_response.js"></script>
+
+
   </div>
 </body>
 </html>

@@ -9,6 +9,10 @@ body { background-color: white
   }
 }
 /*Admin page*/
+.file {
+  visibility: hidden;
+  position: absolute;
+}
 .custom-file-name:after {
   content: attr(data-content) !important;
   position: absolute;
