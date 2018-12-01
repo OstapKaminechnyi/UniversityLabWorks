@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html lang="uk" manifest="manifest.appcache">
 
 <head>
@@ -11,6 +12,7 @@
   <link href="bootstrap.css" rel="stylesheet">
 
   <link href="style.css" rel="stylesheet">
+
 </head>
 
 
@@ -64,11 +66,10 @@
       </ul>
     </div>
   </nav>
-
   <content>
    <br>
     <center>
-      <h1>Додати новину</h1>
+      <h1>Add news </h1>
     </center>
     <br>
     <div class="card">
@@ -79,23 +80,22 @@
             <input id="my-file-selector" class="form-control" type="file" accept="image/*" class="btn btn-choose btn-success btn-outline btn-block"
               id="userInputFile" type="file" aria-describedby="fileHelp" onchange="loadPreviewPhoto()">
             <center>
-              <small id="fileHelp" class="form-text text-muted">Вибрати фото статті.</small>
+              <small id="fileHelp" class="form-text text-muted">Add image</small>
             </center>
           </div>
           <center>
-            <img src="images/add_image.svg" alt="your photo" class="img-fluid" id="user-image" width='150px'>
-
-            <br>
+            <img src="../2lab/images/after_cookie.jpg" alt="your photo" class="img-fluid" id="user-image" width='150px'>
+        <br>
         </div>
         <div class="col">
           <div class="form-group">
-            <input class="form-control" type="text" id="header" placeholder="Заголовок...">
+            <input class="form-control" type="text" id="header" placeholder="Title">
             <br>
-            <textarea class="form-control" rows="3" id="shortText" placeholder="Короткий опис статті..."></textarea>
+            <textarea class="form-control" rows="3" id="shortText" placeholder="Short description"></textarea>
             <br>
-            <textarea class="form-control" rows="6" id="newsText" placeholder="Стаття..."></textarea>
+            <textarea class="form-control" rows="6" id="newsText" placeholder="Long description"></textarea>
           </div>
-          <button class="btn btn-success" type="submit" onclick="addNews()">Відправити</button>
+          <button class="btn btn-success" type="submit" onclick="addNews()">Send</button>
         </div>
       </div>
     </div>
@@ -104,12 +104,12 @@
     <hr>
     &#169; 2018. Ostap Kaminechnyi
   </footer>
+  <script src="js/add_news.js"></script>
 
   <script src="jquery.min.js"></script>
   <script src="popper.min.js"></script>
   <script src="bootstrap.min.js"></script>
   <script src="js/ie10-viewport-bug-workaround.js "></script>
-  <script src="js/add_news.js "></script>
 
   <script src="http://rawgit.com/notifyjs/notifyjs/master/dist/notify.js "></script>
   <script src="js/notify.js "></script>
