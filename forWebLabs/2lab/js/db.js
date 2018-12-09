@@ -1,3 +1,3 @@
 module.exports = {
-  url: "mongodb://novipash_12:novipash@ds157057.mlab.com:57057/lab_nodejsdatabase"
+  url: "mongodb://ostapkmn:ostap10@ds247838.mlab.com:47838/db_seria"
 };

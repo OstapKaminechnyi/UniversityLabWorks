@@ -1,4 +1,4 @@
-var useLocalStorage = false;
+var useLocalStorage = true;
 
 function switchUseLS() {
     useLocalStorage = !useLocalStorage;
@@ -120,8 +120,23 @@ function loadPreviewPhoto() {
 
 function createNews(news) {
     var element = document.getElementById("newsRow");
-   element.innerHTML += '<div class="col-lg-4 card"> <center><img src = "' + news.image + '" alt = "News" width="300" height = "300"></center><center><h3>'
+      element.innerHTML += '<div class="col-lg-4 card"> <center><img src = "' + news.image + '" alt = "News" width="300" height = "300"></center><center><h3>'
         + news.header + '</h3></center><p>' + news.shortText + '</p></div>'
+
+}
+
+function takeFromServer() {
+    $.ajax({
+        url: 'http://localhost:8080/api/bears',
+        type: "get",
+        dataType: "json",
+
+        success: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                createNews(data[i]);
+            }
+        }
+    });
 }
 
 function show() {
@@ -177,4 +192,4 @@ function show() {
     }
 }
 
- 
+
