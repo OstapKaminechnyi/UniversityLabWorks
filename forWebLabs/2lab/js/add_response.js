@@ -51,6 +51,9 @@ function addToStorage(response) {
 }
 
 function showLocalInfo() {
+  if(isOnline()){
+    getFansFromServer()
+  }else{
   if (useLocalStorage) {
     var response_item = localStorage.getItem('responses');
     if (response_item !== null) {
@@ -91,7 +94,7 @@ function showLocalInfo() {
       }
     }
   }
-}
+}}
 
 function addResponse() {
   var responseText = document.getElementById("comment");
@@ -106,7 +109,10 @@ function addResponse() {
     return;
   }
   var response = new Response(nameText.value, responseText.value, date);
-  addToStorage(response);
+  if(isOnline()){
+    sendFansToServer(response)
+  }else{
+    addToStorage(response);}
   //createResponse(response);
   responseText.value = "";
   nameText.value = "";
@@ -128,4 +134,35 @@ function createResponse(response) {
     '</span><span><i>' + dateString + '</i></span></p><p>' + responseText + '</p></div></div><hr>';
 
   element.insertBefore(responseRow, responseField);
+}
+function sendFansToServer(data) {
+  let url = 'http://localhost:3012/Fans';
+
+  postRequest(url, data)
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+
+  function postRequest(url, data) {
+      return fetch(url, {
+          credentials: 'same-origin',
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: new Headers({
+              'Content-Type': 'application/json'
+          }),
+      })
+          .then(response => response.json())
+  }
+}
+
+function getFansFromServer() {
+  let url = 'http://localhost:3012/Fans';
+  fetch(url)
+      .then(response => response.json())
+      .then(data => {
+          for (i in data) {
+            createResponse(data[i]);
+          }
+      })
+      .catch(error => console.error(error));
 }

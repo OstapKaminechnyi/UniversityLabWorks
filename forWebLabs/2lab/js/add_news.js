@@ -51,9 +51,10 @@ function addNews() {
     }
     var news = new News(newsHeader.value, newsShortText.value, newsText.value, imagePreview.src);
     if (isOnline()) {
-        //server stuff
+        sendNewsToServer(news)
+    }else{
+        addToStorage(news);
     }
-    addToStorage(news);
     alert('Новина успішно опублікована! Оновіть сторінку з публікаціями');
     newsHeader.value = "";
     newsShortText.value = "";
@@ -125,21 +126,12 @@ function createNews(news) {
 
 }
 
-function takeFromServer() {
-    $.ajax({
-        url: 'http://localhost:8080/api/bears',
-        type: "get",
-        dataType: "json",
 
-        success: function (data) {
-            for (var i = 0; i < data.length; i++) {
-                createNews(data[i]);
-            }
-        }
-    });
-}
 
 function show() {
+    if(isOnline()){
+    getNewsFromServer();
+  }else{
     if (useLocalStorage) {
         var news = new Array;
         var news_item = localStorage.getItem('news');
@@ -191,5 +183,36 @@ function show() {
         }
     }
 }
+}
+function sendNewsToServer(data) {
+  let url = 'http://localhost:3012/News';
 
+  postRequest(url, data)
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+
+  function postRequest(url, data) {
+      return fetch(url, {
+          credentials: 'same-origin',
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: new Headers({
+              'Content-Type': 'application/json'
+          }),
+      })
+  .then(response => response.json())
+  }
+}
+
+function getNewsFromServer() {
+  let url = 'http://localhost:3012/News';
+  fetch(url)
+      .then(response => response.json())
+      .then(data => {
+          for (i in data) {
+            createNews(data[i]);
+          }
+      })
+      .catch(error => console.error(error));
+}
 

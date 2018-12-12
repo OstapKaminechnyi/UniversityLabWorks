@@ -1,110 +1,153 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var MongoClient = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID
+
 var app = express();
-var morgan = require('morgan');
-var cors = require('cors')
- // configure app
-app.use(cors());
-app.use(morgan('dev')); // log requests to the console
- // configure body parser
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+var db; 
+
 app.use(bodyParser.json());
- var port = process.env.PORT || 8889; // set our port
-app.listen(8889, function () {
- });
-// DATABASE SETUP
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://ostapkmn:ostap10@ds247838.mlab.com:47838/db_seria'); // connect to our database
- // Handle the connection event
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
- db.once('open', function () {
-    console.log("DB connection alive");
-});
- // Bear models lives here
-var Bear = require('./models/bear');
- // ROUTES FOR OUR API
-// =============================================================================
- // create our router
-var router = express.Router();
- // middleware to use for all requests
-router.use(function (req, res, next) {
-    // do logging
-    console.log('Something is happening.');
-    next();
-});
- // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
-router.get('/', function (req, res) {
-    res.json({
-        message: 'hooray! welcome to our api!'
-    });
-});
- // on routes that end in /bears
-// —------------------------------------------------—
-router.route('/bears')
-     // create a bear (accessed at POST http://localhost:8080/bears)
-    .post(function (req, res) {
-         var bear = new Bear(); // create a new instance of the Bear model
-        bear.title = req.body.title;
-        bear.longdescription = req.body.longdescription; // set the bears name (comes from the request)
-        bear.shortdescription = req.body.shortdescription;
-        bear.save(function (err) {
-            if (err)
-                res.send(err);
-             res.json({
-                message: 'Review created!'
-            });
-        });
-     })
-     // get all the bears (accessed at GET http://localhost:8080/api/bears)
-    .get(function (req, res) {
-        Bear.find(function (err, bears) {
-            if (err)
-                res.send(err);
-             res.json(bears);
-        });
-    });
- // on routes that end in /bears/:bear_id
-// —------------------------------------------------—
-router.route('/bears/:bear_id')
-     // get the bear with that id
-    .get(function (req, res) {
-        Bear.findById(req.params.bear_id, function (err, bear) {
-            if (err)
-                res.send(err);
-            res.json(bear);
-        });
+app.use(bodyParser.urlencoded({extended:true}));
+
+app.get('/News',function(req,res){
+    db.db().collection('news').find().toArray(function(err, docs){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(docs)
     })
-     // update the bear with this id
-    .put(function (req, res) {
-        Bear.findById(req.params.bear_id, function (err, bear) {
-             if (err)
-                res.send(err);
-             bear.title = req.body.title;
-            bear.longdescription = req.body.longdescription;
-            bear.shortdescription = req.body.shortdescription
-            bear.save(function (err) {
-                if (err)
-                    res.send(err);
-                 res.json({
-                    message: 'Bear updated!'
-                });
-            });
-         });
+});
+
+app.get('/News/:id',function(req,res){
+    db.db().collection('news').findOne({_id: ObjectID(req.params.id)},function(err,docs){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(docs)
     })
-     // delete the bear with this id
-    .delete(function (req, res) {
-        Bear.remove({
-            _id: req.params.bear_id
-        }, function (err, bear) {
-            if (err)
-                res.send(err);
-             res.json({
-                message: 'Successfully deleted'
-            });
-        });
+});//повернення
+
+app.post('/News',function(req,res){
+    var news = {
+        header: req.body.header,
+        shortText: req.body.shortText,
+        fullText: req.body.fullText,
+        image: req.body.image
+    };
+    db.db().collection('news').insertOne(news,function(err,result){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(news)
+    })
+});//добавлення
+
+app.put('/News/:id',function(req,res){
+    db.db().collection('news').updateOne(
+        {_id: ObjectID(req.params.id)},
+        {$set:{       
+            header: req.body.header,
+            shortText: req.body.shortText,
+            fullText: req.body.fullText,
+            image: req.body.image}},
+        function(err,result){
+            if(err){
+                console.log(err)
+                return res.sendStatus(500)
+            }
+            res.sendStatus(200)
+        }
+    )
+});//обновлення
+
+app.delete('/News/:id', function (req, res) {
+    db.db().collection('news').deleteOne(
+        {_id: ObjectID(req.params.id)},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+});
+
+//\\\\\\\\\\\\\\\\\\\\\\\\
+app.get('/Fans',function(req,res){
+    db.db().collection('fans').find().toArray(function(err, docs){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(docs)
+    })
+});
+
+app.get('/Fans/:id',function(req,res){
+    db.db().collection('fans').findOne({_id: ObjectID(req.params.id)},function(err,docs){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(docs)
+    })
+});//повернення
+
+app.post('/Fans',function(req,res){
+    var fans = {
+        name: req.body.name,
+        response: req.body.response,
+        date: req.body.date
+    };
+    db.db().collection('fans').insertOne(fans,function(err,result){
+        if(err){
+            console.log(err)
+            return res.sendStatus(500)
+        }
+        res.send(fans)
+    })
+});//добавлення
+
+app.put('/Fans/:id',function(req,res){
+    db.db().collection('fans').updateOne(
+        {_id: ObjectID(req.params.id)},
+        {$set:{name:req.body.name,response: req.body.response,date: req.body.date}},
+        function(err,result){
+            if(err){
+                console.log(err)
+                return res.sendStatus(500)
+            }
+            res.sendStatus(200)
+        }
+    )
+});//обновлення
+
+app.delete('/Fans/:id', function (req, res) {
+    db.db().collection('fans').deleteOne(
+        {_id: ObjectID(req.params.id)},
+        function (err, result) {
+            if (err) {
+                console.log(err);
+                return res.sendStatus(500);
+            }
+            res.sendStatus(200);
+        }
+    )
+});
+
+
+//MongoClient.connect("mongodb://localhost:27017/YourDB", { useNewUrlParser: true })
+
+MongoClient.connect('mongodb://localhost:27017/lab?useNewUrlParser=true',function(err,database){
+    if(err){
+        return console.log(err)
+    }
+    db = database;
+    app.listen(3012,function(){
+        console.log("Conect DB")
     });
- // REGISTER OUR ROUTES —---------------------------—
-app.use('/api', router);
+});
